@@ -33,13 +33,21 @@
 
 📁 StudyBuddy/
 ├── dashboard.php / .js / .css
+
 ├── index.php / .js / .css
+
 ├── login.php / logout.php / register.php
+
 ├── edit_profile.php / .css
+
 ├── find_tutor.php / .js / .css
+
 ├── my_courses.php / .js / .css
+
 ├── home.html / .js / .css
+
 ├── fetch_tutors.php / submit_booking.php / remove_course.php / etc.
+
 └── db.php
 
 ---
