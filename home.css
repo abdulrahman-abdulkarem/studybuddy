@@ -1,0 +1,522 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  background: rgb(226, 226, 226);
+}
+nav{
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  left: 0;
+  width: 90px;
+  /* width: 280px; */
+  background: #fff;
+  overflow: hidden;
+  transition: 1s;
+}
+nav:hover{
+  width: 280px;
+  transition: 1s;
+}
+.logo{
+  text-align: center;
+  display: flex;
+  margin: 10px 0 0 10px;
+  padding-bottom: 3rem;
+}
+
+.logo img{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+.logo span{
+  font-weight: bold;
+  padding-left: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+a{
+  position: relative;
+  width: 280px;
+  font-size: 14px;
+  color: rgb(85, 83, 83);
+  display: table;
+  padding: 10px;
+}
+nav .fas{
+  position: relative;
+  width: 70px;
+  height: 40px;
+  top: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+.nav-item{
+  position: relative;
+  top: 12px;
+  margin-left: 10px;
+}
+a:hover{
+  background: #eee;
+}
+a:hover i{
+  color: #34AF6D;
+  transition: 0.5s;
+}
+.editprofile {
+  position: relative;
+  bottom: 0;
+  margin-top: 190px;
+}
+
+.logout{
+  position: relative;
+  bottom: 0;
+}
+
+.container{
+  display: flex;
+}
+
+/* MAin Section */
+#content {
+  margin-left: 80px; /* Ensure it aligns with the sidebar width */
+  padding: 20px;
+  transition: margin-left 0.3s;
+  margin-top: 60px;
+  width: calc(100% - 80px); /* Adjusted width to consider sidebar */
+}
+
+.home-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start; /* Ensures cards align to the left */
+}
+
+.home-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: calc(50% - 20px);
+  min-width: 300px;
+  margin-bottom: 20px;
+}
+
+.home-card h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.home-card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .home-card {
+      width: 100%;
+  }
+  .feature-section {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .feature-card {
+      width: 100%;
+      max-width: 100%;
+  }
+
+  .testimonial-cards {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
+/* Feature section styles */
+.feature-section {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+  gap: 20px;
+}
+
+.feature-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: calc(30% - 20px);
+  min-width: 250px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.feature-card i {
+  font-size: 36px;
+  color: #2e59d9;
+}
+
+.feature-card h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 15px 0;
+}
+
+.feature-card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Testimonial section styles */
+.testimonial-section {
+  text-align: center; /* Center align content within the section */
+  padding: 20px;
+  margin-top: 60px; /* Adjusted top margin for spacing */
+}
+
+.testimonial-heading {
+  margin-bottom: 20px; /* Space between heading and cards */
+}
+
+.testimonial-heading h2 {
+  margin: 0; /* Remove default margin */
+  font-weight: 700; /* Optionally make heading bold */
+}
+
+.testimonial-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center align cards horizontally */
+  gap: 20px; /* Space between cards */
+  margin-top: 20px; /* Space between heading and cards */
+}
+.testimonial-cards p{
+  text-align: justify;
+  margin-bottom: 15px;
+}
+
+.testimonial-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 250px; /* Set a fixed width for consistency */
+  text-align: left; /* Align text inside cards to the left */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 250px; /* Set a fixed height for consistency */
+  overflow: hidden;
+}
+
+.testimonial-card img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.testimonial-card p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.4;
+}
+
+.user-name {
+  font-size: 14px;
+  color: #777;
+  margin-top: 10px; /* Space between text and user name */
+}
+
+.cta-button {
+  background-color: #1cc88a;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #17a673;
+}
+
+/* Course carousel styles */
+/* Course carousel styles */
+/* Add or update these styles in your homepage.css file */
+
+/* Course carousel styles */
+.course-carousel {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 20px 0;
+}
+
+.carousel-item {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-right: 20px;
+  flex: 0 0 auto;
+  width: 300px; /* Adjusted width for carousel items */
+  transition: transform 0.3s;
+  text-align: center;
+}
+
+.carousel-item img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.carousel-item h3 {
+  font-size: 16px;
+  margin: 0;
+}
+.hero-content h1 {
+  text-align: center;
+}
+.hero-content h3 {
+  text-align: center;
+  font-size: 24px;
+}
+
+.carousel-item p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.carousel-item:hover {
+  transform: translateY(-5px);
+}
+
+/* Hide scrollbars */
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+
+
+/* Upcoming events styles */
+.upcoming-events {
+  margin-top: 40px;
+}
+
+.event-list {
+  list-style: none;
+  padding: 0;
+}
+
+.event-list li {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Latest news styles */
+.latest-news {
+  margin-top: 40px;
+}
+
+.news-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.news-item {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  flex: 1 1 calc(33.333% - 20px);
+}
+
+/* Student achievements styles */
+.student-achievements {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.achievement-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.achievement-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+}
+
+/* Video introduction styles */
+.video-introduction {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Footer styles (optional) */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Additional styles */
+.non-bold-text {
+  font-weight: normal; /* Set font-weight to normal */
+}
+
+
+
+/* Add some basic styling to the form */
+form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the form groups */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Style the input fields */
+.form-control {
+  height: 40px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Style the textarea */
+textarea.form-control {
+  height: 100px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+/* Style the submit button */
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+/* Style the contact info section */
+.col-lg-5 {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+  margin-right: 10px;
+  color: #666;
+}
+
+h3, h5 {
+  margin-top: 0;
+}
+
+h5 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+.mouse-trailer {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #34AF6D;
+  border-radius: 50%;
+  pointer-events: none; /* Ensure the element does not interfere with mouse events */
+  transition: transform 0.1s ease-out; /* Smooth transition for movement */
+  z-index: 1000; /* Ensure it's above other content */
+}

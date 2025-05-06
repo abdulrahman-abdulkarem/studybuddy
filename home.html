@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Courses</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <style>
+        /* Additional CSS for clock styling */
+        .clock-container {
+            text-align: center;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-bottom: 1px solid #ccc;
+            margin-bottom: 20px;
+        }
+
+        #clock {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <ul>
+        <li><a href="#" class="logo">
+          <img src="images/logo.png">
+          <span class="nav-item">StudyBuddy</span>
+        </a></li>
+        <li><a href="home.html">
+          <i class="fas fa-home"></i>
+          <span class="nav-item">Home</span>
+        </a></li>
+        <li><a href="find_tutor.php">
+          <i class="fas fa-chalkboard-teacher"></i>
+          <span class="nav-item">Find tutor</span>
+        </a></li>
+        <li><a href="my_courses.php">
+          <i class="fas fa-book"></i>
+          <span class="nav-item">My courses</span>
+        </a></li>
+        <li><a href="dashboard.php">
+          <i class="fas fa-chart-bar"></i>
+          <span class="nav-item">Dashboard</span>
+        </a></li>
+        <li><a href="edit_profile.php" class="editprofile">
+          <i class="fas fa-user-edit"></i>
+          <span class="nav-item">Edit profile</span>
+        </a></li>
+        <li><a href="logout.php" class="logout">
+          <i class="fas fa-sign-out-alt"></i>
+          <span class="nav-item">Log out</span>
+        </a></li>
+      </ul>
+    </nav>
+    <div id="content" class="content">
+      <div class="clock-container">
+        <div id="clock"></div>
+      </div>
+      
+      <div class="main-content">
+        <section class="hero-section">
+          <div class="hero-content">
+            <h1>Welcome to StudyBuddy</h1>
+            <h3 class="non-bold-text">Your personalized study companion.</h3>
+          </div>
+        </section>
+  
+        <section class="feature-section">
+          <div class="feature-card">
+            <i class="fas fa-book-open"></i>
+            <h2>Explore Courses</h2>
+            <p>Find and enroll in courses tailored for you.</p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-user-friends"></i>
+            <h2>Connect with Friends</h2>
+            <p>Build your network and study together.</p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-comment-alt"></i>
+            <h2>Message Center</h2>
+            <p>Stay in touch with your classmates and instructors.</p>
+          </div>
+        </section>
+  
+        <section class="testimonial-section">
+          <div class="testimonial-heading">
+              <h2>What Our Users Say</h2>
+          </div>
+          <div class="testimonial-cards">
+              <div class="testimonial-card">
+                  <img src="images/user1.jpg" alt="User Avatar">
+                  <p>This website is a lifesaver! I can find tutors for almost any subject in minutes, and it's so easy to schedule lessons around my busy class schedule. </p>
+                  <p class="user-name">Sarah</p>
+              </div>
+              <!-- More testimonial cards as needed -->
+  
+              <div class="testimonial-cards">
+                  <div class="testimonial-card">
+                      <img src="images/user2.jpg" alt="User Avatar">
+                      <p>I love the ease of use of this tutoring platform. The interface is intuitive and makes it simple to connect with students and manage my schedule.</p>
+                      <p class="user-name">David</p>
+                  </div>
+  
+                  <div class="testimonial-cards">
+                      <div class="testimonial-card">
+                          <img src="images/user3.jpg" alt="User Avatar">
+                          <p>I feel so much more confident about my child's education since we started using this website. The tutors are patient and knowledgeable.</p>
+                          <p class="user-name">Emily</p>
+                      </div>
+  
+                      <div class="testimonial-cards">
+                          <div class="testimonial-card">
+                              <img src="images/user4.jpg" alt="User Avatar">
+                              <p>The website seems a bit cluttered, and it took me a while to find the subject I was looking for. The search filters could be improved.</p>
+                              <p class="user-name">Michael</p>
+                          </div>
+          </div>
+      </section>
+
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+
+          <div class="row align-items-center">
+            <div class="col-lg-7 mb-5 mb-lg-0">
+
+              <h2 class="mb-5">Fill the form. <br> It's easy.</h2>
+
+              <form action="https://api.web3forms.com/submit" class="border-right pr-5 mb-5" method="POST" id="contactForm" name="contactForm">
+                <div class="row">
+                  <input type="hidden" name="access_key" value="f6f6db8f-e519-4ee6-a815-da6f47e7ea21">
+                  <div class="col-md-6 form-group">
+                    <input type="text" class="form-control" name="First Name" id="fname" placeholder="First name">
+                  </div>
+                  <div class="col-md-6 form-group">
+                    <input type="text" class="form-control" name="Last Name" id="lname" placeholder="Last name">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 form-group">
+                    <input type="text" class="form-control" name="Email" id="email" placeholder="Email">
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-12 form-group">
+                    <textarea class="form-control" name="Message" id="message" cols="60" rows="5"
+                      placeholder="Write your message"></textarea>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <button type="submit">Send Message</button>
+                  </div>
+                </div>
+              </form>
+
+
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="home.js"></script>
+  <script>
+    // Function to display current time
+    function updateTime() {
+      const now = new Date();
+      const hours = now.getHours().toString().padStart(2, '0');
+      const minutes = now.getMinutes().toString().padStart(2, '0');
+      const seconds = now.getSeconds().toString().padStart(2, '0');
+      const timeString = `${hours}:${minutes}:${seconds}`;
+      document.getElementById('clock').textContent = timeString;
+    }
+
+    // Update time every second
+    setInterval(updateTime, 1000);
+
+    // Initial call to display time immediately
+    updateTime();
+
+    document.addEventListener('mousemove', function(e) {
+    const mouseTrailer = document.querySelector('.mouse-trailer');
+    const mouseX = e.pageX;
+    const mouseY = e.pageY;
+
+    // Update the position of the mouse-trailer element
+    mouseTrailer.style.transform = `translate(${mouseX}px, ${mouseY}px)`;
+  });
+  </script>
+  <div class="mouse-trailer"></div>
+</body>
+</html>
