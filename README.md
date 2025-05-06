@@ -32,6 +32,7 @@
 ## 📂 Project Structure
 
 📁 StudyBuddy/
+
 ├── dashboard.php / .js / .css
 
 ├── index.php / .js / .css
