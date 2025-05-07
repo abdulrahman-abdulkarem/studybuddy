@@ -1,4 +1,4 @@
-# 📚 StudyBuddy
+![image](https://github.com/user-attachments/assets/b55446f6-e786-4358-866e-002f2006c3d8)# 📚 StudyBuddy
 
 **StudyBuddy** is a dynamic web-based platform built to connect students with tutors. It offers intuitive features for course posting, booking, profile management, and real-time updates — empowering both students and tutors to learn and teach efficiently.
 
@@ -26,6 +26,12 @@
 | Database    | MySQL (via `db.php` connection)                        |
 | APIs        | AJAX using native `fetch()`                            |
 | Tools       | Git, XAMPP (optional for local hosting)                |
+
+---
+
+## 📸 Preview
+
+![image](https://github.com/user-attachments/assets/6b362d79-a3b5-44ae-bb62-a4ed76b17012)
 
 ---
 
