@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/b55446f6-e786-4358-866e-002f2006c3d8)# 📚 StudyBuddy
+# 📚 StudyBuddy
 
 **StudyBuddy** is a dynamic web-based platform built to connect students with tutors. It offers intuitive features for course posting, booking, profile management, and real-time updates — empowering both students and tutors to learn and teach efficiently.
 
